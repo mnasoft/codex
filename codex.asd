@@ -7,6 +7,7 @@
   :bug-tracker "https://github.com/CommonDoc/codex/issues"
   :source-control (:git "git@github.com:CommonDoc/codex.git")
   :depends-on (:docparser
+               :docparser/corrector
                :common-doc
                :common-doc-contrib
                :pandocl
