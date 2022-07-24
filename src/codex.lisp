@@ -108,7 +108,7 @@ is found.")
   "Build a manifest. Return a list of nodes which do not have a docstring."
   ;; First, load all the systems, extracting documentation information into the
   ;; global index
-  (let ((codex.macro:*index* (docparser:parse (codex.manifest:manifest-systems manifest)))
+  (let ((codex.macro:*index* (docparser/corrector:parse (codex.manifest:manifest-systems manifest)))
         (*current-markup-format* (codex.manifest:manifest-markup-format manifest))
         *undocumented-list*)
     ;; Go through each document, building it
