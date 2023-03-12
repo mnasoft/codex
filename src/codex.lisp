@@ -104,6 +104,8 @@ is found.")
                    (type-of node))))
     (mapc #'print-node undocumented)))
 
+(format t "~2%Codex - Corrector - loaded~2%")
+
 (defun build-manifest (manifest directory)
   "Build a manifest. Return a list of nodes which do not have a docstring."
   ;; First, load all the systems, extracting documentation information into the
